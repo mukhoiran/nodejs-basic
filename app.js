@@ -11,9 +11,18 @@
 // console.log("text.txt was copied to text2.txt");
 
 //==================================================
-const superheroes = require('superheroes');
+// const superheroes = require('superheroes');
  
-const heroName = superheroes.random();
-//=> 'Spider-Ham'
+// const heroName = superheroes.random();
+// console.log(heroName);
 
-console.log(heroName);
+//===================================================
+const op = require("./module");
+
+const moduleTitle = op.title;
+const moduleSum = op.sum(10,5);
+const moduleTimes = op.times(10,5);
+
+console.log(moduleTitle);
+console.log(moduleSum);
+console.log(moduleTimes);
